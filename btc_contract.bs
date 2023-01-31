@@ -1,0 +1,5 @@
+OP_IF
+  <hash of secret> OP_EQUALVERIFY <recipient pubkey> OP_CHECKSIG
+OP_ELSE
+  <timestamp> OP_CHECKLOCKTIMEVERIFY OP_DROP <sender pubkey> OP_CHECKSIG
+OP_ENDIF
